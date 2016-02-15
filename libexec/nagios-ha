@@ -259,6 +259,8 @@ check_mtime_zk_node()
 		{
 			echo "${GREEN}Master ${RESET}mode $SESSION_HOLDER holding session for $DIFF_SECS sec $GREEN [Refreshing Session]$RESET";
 			refresh_session_zk_node;
+			sed "s/$NAGIOS_STANDBY_CFG_PATH/$NAGIOS_MASTER_CFG_PATH/g" -i ${NAGIOS_BASE_PATH}/${NAGIOS_CFG_FILE};
+                        /etc/init.d/nagios reload;
 			SLEEP_TIME=`shuf -i 100-200 -n 1`;
                         sleep $SLEEP_TIME;
 			return 1;
