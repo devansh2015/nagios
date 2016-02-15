@@ -1,0 +1,335 @@
+#!/bin/bash
+
+export ZK_QUORUM="zk3001.hadoop.com:2181,zk3002.hadoop.com:2181,zk3003.hadoop.com:2181";
+NAGIOS_BASE_PATH="/usr/local/nagios/etc/";
+NAGIOS_MASTER_CFG_PATH="master";
+NAGIOS_STANDBY_CFG_PATH="standby";
+NAGIOS_CFG_FILE="nagios.cfg";
+HA_NAME="nagios-ha";
+CHILD_NAME="master";
+RED=`tput setaf 1`;
+GREEN=`tput setaf 2`;
+RESET=`tput sgr0`;
+SESSION_TIMEOUT=600;
+PIDFILE=/var/run/nagios-ha.pid
+LOG_FILE=/var/log/nagios-ha.log
+STATUS_RUNNING=0
+STATUS_DEAD=1
+STATUS_DEAD_AND_LOCK=2
+STATUS_NOT_RUNNING=3
+
+. /lib/lsb/init-functions
+
+
+# STATUS 1 is yes 0 is false
+
+
+#### function check to run the script as root user ####
+
+check_for_root() 
+{
+  if [ $(id -ur) -ne 0 ]; then
+    echo "${RED}Error: ${RESET}root user required $RED [Run as root user ]${RESET}";
+    exit 1
+  fi
+}
+
+check_resources()
+{
+	if [ -f /usr/bin/zookeeper-client ];then
+		echo "Zookeeper Client Present $GREEN [OK] $RESET";
+	else
+		echo "Zookeeper Client Missing $RED [Install rpm zookeeper] $RESET";
+		exit 1;
+	fi
+}
+
+#### function check for already running process for nagios-ha before starting the process ####
+
+check_running_pid()
+{
+	if [ -f $PIDFILE ];then
+		echo "${RED}Error : ${RESET} PID file $PIDFILE exist $RED [Failed]${RESET}";
+		check_nagios_ha_status;
+		exit 1;
+	else
+		run_pid=`pidof -o %PPID -x $0`;
+		if [ ${#run_pid} -gt 0 ];then
+			echo "${RED}Warning : ${RESET}$0 is already running with pid $run_pid ${RED}[running]${RESET}";
+			exit 1;
+		fi
+	fi
+}
+
+##### function check for the state of nagios-ha process ####
+
+
+check_nagios_ha_status()
+{
+	/etc/redhat-lsb/lsb_pidofproc -p $PIDFILE bash > /dev/null
+	status=$?
+	case $status in
+	$STATUS_RUNNING)
+      		log_success_msg "${HA_NAME} is running with pid `cat $PIDFILE`"
+		;;
+	$STATUS_DEAD)
+		log_failure_msg "${HA_NAME} is dead and pid file exists"
+		;;
+	$STATUS_DEAD_AND_LOCK)
+		log_failure_msg "${HA_NAME} is dead and lock file exists"
+		;;
+	$STATUS_NOT_RUNNING)
+		log_failure_msg "${HA_NAME} is not running"
+		;;
+	*)
+		log_failure_msg "${HA_NAME} status is unknown"
+		;;
+	esac
+
+}
+
+
+#### function to stop the nagios-ha process ####
+
+
+stop_nagios_ha()
+{
+	if [ -f $PIDFILE ];then
+	{
+		kill `/etc/redhat-lsb/lsb_pidofproc -p $PIDFILE bash`;
+		rm -f $PIDFILE;
+		if [ -f $PIDFILE ];then
+			kill -9 `/etc/redhat-lsb/lsb_pidofproc -p $PIDFILE bash`;
+		else
+			echo "Stopped nagios-ha $GREEN [OK]$RESET";
+		fi
+	}
+	else
+	{
+		run_pid=`pidof -o %PPID -x $0`;
+                if [ ${#run_pid} -gt 0 ];then
+			kill -9 ${run_pid};
+			echo "Stopped nagios-ha $GREEN [OK]$RESET";
+		fi
+	}
+	fi
+}
+
+#### function check to see if /{HA_NAME} session exists or not ####
+
+base_zk_node_status()
+{
+	zk_status=`/usr/bin/zookeeper-client -server $ZK_QUORUM stat /${HA_NAME} 2>&1 | grep "Node does not exist" | wc -l`;
+	if [ $zk_status -gt 0 ];then
+		return 0;
+	else
+		return 1;
+	fi
+}
+
+#### function to create znode /{HA_NAME} session ####
+
+
+create_base_zk_node() 
+{
+	base_zk_node_status;
+	status=$?;
+	if [ $status -eq 0 ]; then
+	{
+		/usr/bin/zookeeper-client -server $ZK_QUORUM create /nagios-ha 'highavailability' >/dev/null 2>&1
+		base_zk_node_status;
+		create_status=$?;
+		if [ $create_status -eq 1 ];then
+		{
+			echo "Successfully Created Zookeeper znode /${HA_NAME} $GREEN [OK] $RESET ";
+			return 1;
+		}
+		else
+		{
+			echo "${RED}Error : $RESET Failed to Created Zookeeper znode /${HA_NAME} $RED [Failed] $RESET ";
+			return 0;
+		}
+		fi
+	}
+	else
+	{
+	        echo "Zookeeper znode /${HA_NAME} exists $GREEN [OK] $RESET";
+                return 1;
+	}
+	fi
+}
+
+
+#### function check to see if znode /{HA_NAME}/${CHILD_NAME} session exists or not ####
+
+
+child_zk_node_status()
+{
+        child_zk_status=`/usr/bin/zookeeper-client -server $ZK_QUORUM stat /${HA_NAME}/${CHILD_NAME} 2>&1 | grep "Node does not exist" | wc -l`;
+        if [ $child_zk_status -gt 0 ];then
+                return 0;
+        else
+                return 1;
+        fi
+}
+
+#### function to create znode /{HA_NAME}/${CHILD_NAME} session ####
+
+create_child_zk_node()
+{
+        child_zk_node_status;
+        child_status=$?;
+        if [ $child_status -eq 0 ]; then
+        {
+                /usr/bin/zookeeper-client -server $ZK_QUORUM create /${HA_NAME}/${CHILD_NAME} "SESSION_HOLDER=$HOSTNAME" > /dev/null
+                child_zk_node_status;
+                create_child_status=$?;
+                if [ $create_child_status -eq 1 ];then
+                {
+                        echo "Successfully Created Zookeeper znode /${HA_NAME}/${CHILD_NAME} $GREEN [OK] $RESET ";
+                        return 1;
+                }
+                else
+                {
+                        echo "${RED}Error : $RESET Failed to Created Zookeeper znode /${HA_NAME}/${CHILD_NAME} $RED [Failed] $RESET ";
+                        return 0;
+                }
+                fi
+        }
+        else
+        {
+                echo "Zookeeper znode /${HA_NAME}/${CHILD_NAME} exists $GREEN [OK] $RESET";
+                return 1;
+        }
+        fi
+}
+
+#### function to refresh master znode /{HA_NAME}/${CHILD_NAME} session ####
+
+refresh_session_zk_node()
+{
+	echo "refresh_session_zk_node()";
+	/usr/bin/zookeeper-client -server $ZK_QUORUM set /${HA_NAME}/${CHILD_NAME} "SESSION_HOLDER=$HOSTNAME" >/dev/null 2>&1;
+	child_zk_node_status;
+        create_child_status=$?;
+        if [ $create_child_status -eq 1 ];then
+        {
+		echo "Successfully refreshed znode session /${HA_NAME}/${CHILD_NAME} for $HOSTNAME $GREEN [OK] $RESET";
+		return 1;
+	}
+	else
+	{
+		echo "Error : Refreshing Zookeeper znode session /${HA_NAME}/${CHILD_NAME} for $HOSTNAME $RED [Failed] $RESET";
+		return 0;
+	}
+	fi
+}
+		
+##### checking mtime for session and granting control to sepecific node ###
+
+
+check_mtime_zk_node()
+{
+	echo "check_mtime_zk_node()";
+	child_zk_node_status;
+	SESSION_STAT=$?
+	echo "SESS_STAT=$SESSION_STAT";
+	if [ $SESSION_STAT -eq 1 ];then
+	{
+		SESSION_INFO=`/usr/bin/zookeeper-client -server $ZK_QUORUM get /${HA_NAME}/${CHILD_NAME} 2>&1 | tr '\n' '*'`;
+	}
+	else
+	{
+		echo "$RED Error :$RESET Unable to retrive session /${HA_NAME}/${CHILD_NAME} [error]$RESET"
+		create_base_zk_node;
+		create_child_zk_node;
+		SESSION_INFO=`/usr/bin/zookeeper-client -server $ZK_QUORUM get /${HA_NAME}/${CHILD_NAME} 2>&1 | tr '\n' '*'`;	
+	}
+	fi
+	SESSION_HOLDER=`echo $SESSION_INFO |tr '*' '\n'| grep SESSION_HOLDER | awk -F '=' '{print $2}'`;
+	echo "SESSION_HOLDER=$SESSION_HOLDER";
+	MTIME=`echo $SESSION_INFO |tr '*' '\n'| grep mtime | awk -F "=" '{print $2}'`;
+	CURRTIME=`date`;
+	echo "$CURRTIME minus $MTIME";
+	DIFF_SECS=$(( `date -d "$CURRTIME" +%s` - `date -d "$MTIME" +%s` )) ;
+	echo "DIFF=$DIFF_SECS"; 
+	if [ "$HOSTNAME" == "$SESSION_HOLDER" ];then
+	{
+		if [ $DIFF_SECS -lt $SESSION_TIMEOUT ];then
+		{
+			echo "${GREEN}Master ${RESET}mode $SESSION_HOLDER holding session for $DIFF_SECS sec $GREEN [Refreshing Session]$RESET";
+			refresh_session_zk_node;
+			SLEEP_TIME=`shuf -i 100-200 -n 1`;
+                        sleep $SLEEP_TIME;
+			return 1;
+		}
+		else
+		{
+			echo "${GREEN}Master ${RESET}mode $SESSION_HOLDER holding session for $RED $DIFF_SECS sec $GREEN [Reacquiring Session]$RESET";
+                        refresh_session_zk_node;
+                        SLEEP_TIME=`shuf -i 100-200 -n 1`;
+                        sleep $SLEEP_TIME;
+                        return 1;
+		}
+		fi
+	}
+	else
+	{
+		if [ $DIFF_SECS -gt $SESSION_TIMEOUT ];then
+		{
+			echo "${GREEN}StandBy ${RESET}mode on $HOSTNAME session acquired by $SESSION_HOLDER from  $RED $DIFF_SECS sec $GREEN [Acquiring Session]$RESET ";
+			SLEEP_TIME=`shuf -i 100-200 -n 1`;
+			refresh_session_zk_node;
+			sed "s/$NAGIOS_STANDBY_CFG_PATH/$NAGIOS_MASTER_CFG_PATH/g" -i ${NAGIOS_BASE_PATH}/${NAGIOS_CFG_FILE};
+			/etc/init.d/nagios reload;
+			sleep $SLEEP_TIME;
+			return 0;
+		}
+		else
+		{
+			echo "${GREEN}StandBy ${RESET}mode on $HOSTNAME session acquired by $SESSION_HOLDER from $DIFF_SECS sec $GREEN [waiting for session timeout]$RESET";
+			sed "s/$NAGIOS_MASTER_CFG_PATH/$NAGIOS_STANDBY_CFG_PATH/g" -i ${NAGIOS_BASE_PATH}/${NAGIOS_CFG_FILE};
+			/etc/init.d/nagios reload;
+			SLEEP_TIME=`shuf -i 100-200 -n 1`;
+			sleep $SLEEP_TIME;
+			return 0;
+		}
+		fi
+	}
+	fi
+		
+
+}	
+############# MAIN PRG #######
+
+
+case $1 in 
+
+"start")
+	check_for_root;
+	check_resources;
+	check_running_pid;
+	create_base_zk_node;
+	create_child_zk_node;
+	while true; do check_mtime_zk_node;done > $LOG_FILE & echo $! > $PIDFILE
+	;;
+"status")
+	check_running_pid;
+	check_nagios_ha_status;
+	;;
+"stop")
+	stop_nagios_ha;
+	;;
+"restart")
+	stop_nagios_ha;
+	check_for_root;
+	check_resources;
+        check_running_pid;
+        create_base_zk_node;
+        create_child_zk_node;
+	while true; do check_mtime_zk_node;done > $LOG_FILE & echo $! > $PIDFILE
+        ;;
+*)
+	echo "${RED}Error : ${RESET} Invalid argument try any one of them $GREEN [ start or stop or status or restart ]$RESET";
+	;;
+esac
