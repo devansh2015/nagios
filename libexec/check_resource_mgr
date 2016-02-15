@@ -1,0 +1,52 @@
+#!/usr//bin/perl
+use strict;
+use Data::Dumper;
+use HTML::TableExtract;
+use LWP::Simple;
+
+my $resource_mgr = $ARGV[0];
+my $nm_threshold = $ARGV[1];
+my $url = "http://$resource_mgr:8088/cluster";
+my $nagios_node="nn1.hadoop.com";
+my $status = 2;
+my $message = "";
+
+
+sub send_nagios 
+{
+	system (" echo -e '$resource_mgr\tResourceMgr\t$status\t$message\n' | /usr/local/nagios/bin/send_nsca -H $nagios_node -c /usr/local/nagios/etc/send_nsca.cfg ");
+	system ("echo -e '$resource_mgr\tResourceMgr\t$status\t$message\n'");
+}
+
+
+
+my $tex = HTML::TableExtract->new(depth=> 1, count=>0);
+
+$tex->parse( LWP::Simple::get($url));
+my ($table) = $tex->tables;
+my @rows = $table->rows;
+my $node_mgr=$rows[1][8];
+$node_mgr =~ s/\s//g ;
+my $node_decomm = $rows[1][9];
+$node_decomm =~ s/\s//g;
+my $node_lost = $rows[1][10];
+$node_lost =~ s/\s//g ;
+my $node_unhealty = $rows[1][11];
+$node_unhealty =~ s/\s//g;
+my $total_nodes = $node_mgr + $node_decomm + $node_lost + $node_unhealty;
+#print "NM=$node_mgr , Decomm=$node_decomm, Lost=$node_lost, unhealty = $node_unhealty, total = $total_nodes";
+
+my $nm_percentage = int(( $node_mgr * 100 ) / $total_nodes);
+
+if ( $nm_percentage <= $nm_threshold )
+{
+	$message = "Critical : Active Node Manager = $nm_percentage% which is below $nm_threshold% ; Live Nodes = $node_mgr; Total Nodes = $total_nodes ";
+	$status = 2;
+}
+else
+{
+	$message = "OK : Active Node Manager = $nm_percentage% which is above $nm_threshold%; Live Nodes = $node_mgr; Total Nodes = $total_nodes ";
+	$status = 0;
+}
+
+send_nagios();

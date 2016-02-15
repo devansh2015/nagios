@@ -1,0 +1,70 @@
+#!/usr//bin/perl
+use strict;
+use Data::Dumper;
+use HTML::TableExtract;
+use LWP::Simple;
+
+
+my $namenode = $ARGV[0];
+my $thresh_dfs_used=85;
+my $thresh_live_nodes=95;
+my $nagios_node="nn1.hadoop.com";
+my $status=0;
+my $message = "";
+my $nn_status = "";
+
+sub send_nagios 
+{
+	system (" echo -e '$namenode\tName_Node_Status\t$status\t$message\n' | /usr/local/nagios/bin/send_nsca -H $nagios_node -c /usr/local/nagios/etc/send_nsca.cfg ");
+	system ("echo -e '$namenode\tName_Node_Status\t$status\t$message\n'");
+}
+
+my $html = get("http://$namenode:50070/dfshealth.jsp")  or die "Couldn't fetch the NameNode page.";
+my $tex = HTML::TableExtract->new(depth=> 0, count=>1);
+
+$tex->parse($html);
+my ($table) = $tex->tables;
+
+my $numRows = @{$table->rows};
+if ( $numRows == 14 )
+{
+	$nn_status = "Active";
+}
+else
+{
+	$nn_status = "StandBy";
+}
+
+my @rows = $table->rows;
+my $dfs_used = $rows[4][2];
+$dfs_used =~ s/%//;
+my $live_nodes = $rows[10][2];
+$live_nodes =~ s/\(.*:*//;
+my $dead_nodes = $rows[11][2];
+$dead_nodes =~ s/\(.*:*//;
+my $total_nodes = $live_nodes + $dead_nodes;
+my $live_nodes_percentage = ( $live_nodes * 100 ) / $total_nodes ;
+
+if ( $dfs_used >= $thresh_dfs_used )
+{
+	$message = "DFS_Used = $dfs_used% >= $thresh_dfs_used%;";
+	$status = 2;
+}
+
+if ( $live_nodes_percentage <= $thresh_live_nodes )
+{
+	$message = "$message Live Nodes %age = $live_nodes_percentage <= $thresh_live_nodes ;"; 
+	$status = 2;
+}
+
+if ( $status == 2 )
+{
+	$message = "Critical : State = $nn_status; $message";
+}
+else
+{
+	$message = "OK : State = $nn_status; Live Nodes = $live_nodes; DFS Used = $dfs_used%; Dead Nodes = $dead_nodes; ";
+}
+
+print "$message \n";
+send_nagios();

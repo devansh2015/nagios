@@ -1,0 +1,832 @@
+[1441996200] LOG ROTATION: DAILY
+[1441996200] LOG VERSION: 2.0
+[1441996200] CURRENT HOST STATE: dn1.hadoop.com;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.14 ms
+[1441996200] CURRENT HOST STATE: localhost;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.08 ms
+[1441996200] CURRENT HOST STATE: nn1.hadoop.com;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.10 ms
+[1441996200] CURRENT HOST STATE: nn2.hadoop.com;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.50 ms
+[1441996200] CURRENT SERVICE STATE: dn1.hadoop.com;Disk_Space;OK;HARD;1;DISK OK
+[1441996200] CURRENT SERVICE STATE: dn1.hadoop.com;JournalNode;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'JournalNode'
+[1441996200] CURRENT SERVICE STATE: dn1.hadoop.com;SSH;OK;HARD;1;SSH OK - OpenSSH_5.3 (protocol 2.0)
+[1441996200] CURRENT SERVICE STATE: dn1.hadoop.com;Zookeeper;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'zookeeper'
+[1441996200] CURRENT SERVICE STATE: localhost;dummy-check;OK;HARD;1;Ok
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;DFSZKFailoverController;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'DFSZKFailoverController'
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;Disk_Space;OK;HARD;1;DISK OK
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;HistoryServer;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'historyserver'
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;JournalNode;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'JournalNode'
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;Name_Node_Status;OK;HARD;1;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;Namenode_Proc;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'NameNode'
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;ResourceMgr;CRITICAL;HARD;3;CRITICAL: RM check not received
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;SSH;OK;HARD;1;SSH OK - OpenSSH_5.3 (protocol 2.0)
+[1441996200] CURRENT SERVICE STATE: nn1.hadoop.com;Zookeeper;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'zookeeper'
+[1441996200] CURRENT SERVICE STATE: nn2.hadoop.com;DFSZKFailoverController;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'DFSZKFailoverController'
+[1441996200] CURRENT SERVICE STATE: nn2.hadoop.com;Disk_Space;OK;HARD;1;DISK OK
+[1441996200] CURRENT SERVICE STATE: nn2.hadoop.com;JournalNode;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'JournalNode'
+[1441996200] CURRENT SERVICE STATE: nn2.hadoop.com;Name_Node_Status;OK;HARD;1;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441996200] CURRENT SERVICE STATE: nn2.hadoop.com;Namenode_Proc;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'NameNode'
+[1441996200] CURRENT SERVICE STATE: nn2.hadoop.com;ResourceMgr;CRITICAL;HARD;3;CRITICAL: RM check not received
+[1441996200] CURRENT SERVICE STATE: nn2.hadoop.com;SSH;OK;HARD;1;SSH OK - OpenSSH_5.3 (protocol 2.0)
+[1441996200] CURRENT SERVICE STATE: nn2.hadoop.com;Zookeeper;OK;HARD;1;PROCS OK: 1 process with command name 'java', args 'zookeeper'
+[1441996202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441996202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441996202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441996202] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441996502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441996502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441996502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441996502] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441996801] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441996801] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441996801] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441996801] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441997102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441997102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441997102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441997102] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441997402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441997402] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441997402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441997402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441997423] Auto-save of retention data completed successfully.
+[1441997702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441997702] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441997703] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441997703] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441998002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441998002] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441998002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441998002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441998143] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1441998302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441998302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441998302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441998302] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441998602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441998602] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441998602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441998602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441998902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441998902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441998902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441998902] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441999202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441999202] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441999203] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441999203] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441999502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441999502] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441999502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441999502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441999643] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1441999802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441999802] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1441999802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1441999802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442000102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442000102] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442000102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442000102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442000402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442000402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442000402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442000402] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442000702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442000702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442000702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442000702] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442001002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442001002] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442001002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442001002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442001023] Auto-save of retention data completed successfully.
+[1442001302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442001302] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442001302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442001302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442001602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442001602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442001602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442001602] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442001803] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442001902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442001902] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442001902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442001902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442002202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442002202] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442002203] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442002203] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442002502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442002502] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442002502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442002502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442002802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442002802] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442002802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442002802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442003102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442003102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442003102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442003102] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442003303] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442003402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442003402] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442003402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442003402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442003702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442003702] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442003702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442003702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442004002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442004002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442004002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442004002] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442004302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442004302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442004302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442004302] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442004602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442004602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442004602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442004602] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442004623] Auto-save of retention data completed successfully.
+[1442004902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442004902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442004902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442004902] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442005202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442005202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442005202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442005202] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442005463] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442005502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442005502] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442005502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442005502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442005802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442005802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442005802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442005802] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442006102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn2.hadoop.com;Name_Node_Status;0;OK : State = Active; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442006102] PASSIVE SERVICE CHECK: nn2.hadoop.com;Name_Node_Status;0;OK : State = Active: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442006102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442006102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442006387] SERVICE ALERT: dn1.hadoop.com;Zookeeper;CRITICAL;SOFT;1;Connection refused or timed out
+[1442006390] HOST ALERT: dn1.hadoop.com;DOWN;SOFT;1;CRITICAL - Host Unreachable (dn1.hadoop.com)
+[1442006401] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442006401] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442006451] HOST ALERT: dn1.hadoop.com;DOWN;SOFT;2;CRITICAL - Host Unreachable (dn1.hadoop.com)
+[1442006490] SERVICE ALERT: dn1.hadoop.com;Disk_Space;CRITICAL;SOFT;1;Connection refused or timed out
+[1442006493] HOST ALERT: dn1.hadoop.com;DOWN;HARD;3;CRITICAL - Host Unreachable (dn1.hadoop.com)
+[1442006493] HOST NOTIFICATION: india;dn1.hadoop.com;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (dn1.hadoop.com)
+[1442006493] HOST NOTIFICATION: email-only;dn1.hadoop.com;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (dn1.hadoop.com)
+[1442006493] wproc: NOTIFY job 1896 from worker Core Worker 2763 is a non-check helper but exited with return code 2
+[1442006493] wproc:   host=dn1.hadoop.com; service=(none); contact=india
+[1442006493] wproc:   early_timeout=0; exited_ok=1; wait_status=512; error_code=0;
+[1442006493] wproc:   stderr line 01: Send options without primary recipient specified.
+[1442006493] wproc:   stderr line 02: Usage: mail -eiIUdEFntBDNHRV~ -T FILE -u USER -h hops -r address -s SUBJECT -a FILE -q FILE -f FILE -A ACCOUNT -b USERS -c USERS -S OPTION users
+[1442006555] SERVICE ALERT: nn2.hadoop.com;Zookeeper;CRITICAL;SOFT;1;Connection refused or timed out
+[1442006557] SERVICE ALERT: dn1.hadoop.com;JournalNode;CRITICAL;SOFT;1;Connection refused or timed out
+[1442006558] HOST ALERT: nn2.hadoop.com;DOWN;SOFT;1;CRITICAL - Host Unreachable (nn2.hadoop.com)
+[1442006573] SERVICE ALERT: nn2.hadoop.com;DFSZKFailoverController;CRITICAL;SOFT;1;Connection refused or timed out
+[1442006577] HOST ALERT: nn2.hadoop.com;DOWN;SOFT;2;CRITICAL - Host Unreachable (nn2.hadoop.com)
+[1442006580] SERVICE ALERT: nn2.hadoop.com;Disk_Space;CRITICAL;SOFT;1;Connection refused or timed out
+[1442006586] SERVICE ALERT: nn2.hadoop.com;JournalNode;CRITICAL;SOFT;1;Connection refused or timed out
+[1442006599] SERVICE ALERT: nn2.hadoop.com;SSH;CRITICAL;SOFT;1;connect to address nn2.hadoop.com and port 22: No route to host
+[1442006602] SERVICE ALERT: nn2.hadoop.com;Namenode_Proc;CRITICAL;SOFT;1;Connection refused or timed out
+[1442006602] HOST ALERT: nn2.hadoop.com;DOWN;HARD;3;CRITICAL - Host Unreachable (nn2.hadoop.com)
+[1442006602] HOST NOTIFICATION: india;nn2.hadoop.com;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (nn2.hadoop.com)
+[1442006602] HOST NOTIFICATION: email-only;nn2.hadoop.com;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (nn2.hadoop.com)
+[1442006602] wproc: NOTIFY job 1901 from worker Core Worker 2766 is a non-check helper but exited with return code 2
+[1442006602] wproc:   host=nn2.hadoop.com; service=(none); contact=india
+[1442006602] wproc:   early_timeout=0; exited_ok=1; wait_status=512; error_code=0;
+[1442006602] wproc:   stderr line 01: Send options without primary recipient specified.
+[1442006602] wproc:   stderr line 02: Usage: mail -eiIUdEFntBDNHRV~ -T FILE -u USER -h hops -r address -s SUBJECT -a FILE -q FILE -f FILE -A ACCOUNT -b USERS -c USERS -S OPTION users
+[1442006618] SERVICE ALERT: dn1.hadoop.com;SSH;CRITICAL;SOFT;1;connect to address dn1.hadoop.com and port 22: No route to host
+[1442006685] SERVICE ALERT: dn1.hadoop.com;Zookeeper;CRITICAL;SOFT;2;Connection refused or timed out
+[1442006702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy; Live Nodes =  3 ; DFS Used =  0.00%; Dead Nodes =  0 ;
+[1442006702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;0;OK : State = StandBy: Live Nodes =  3 : DFS Used =  0.00%: Dead Nodes =  0 :
+[1442006794] SERVICE ALERT: dn1.hadoop.com;Disk_Space;CRITICAL;SOFT;2;Connection refused or timed out
+[1442006852] SERVICE ALERT: nn2.hadoop.com;Zookeeper;CRITICAL;SOFT;2;Connection refused or timed out
+[1442006857] SERVICE ALERT: dn1.hadoop.com;JournalNode;CRITICAL;SOFT;2;Connection refused or timed out
+[1442006873] SERVICE ALERT: nn2.hadoop.com;DFSZKFailoverController;CRITICAL;SOFT;2;Connection refused or timed out
+[1442006885] SERVICE ALERT: nn2.hadoop.com;Disk_Space;CRITICAL;SOFT;2;Connection refused or timed out
+[1442006888] SERVICE ALERT: nn2.hadoop.com;Namenode_Proc;CRITICAL;SOFT;2;Connection refused or timed out
+[1442006894] SERVICE ALERT: nn2.hadoop.com;JournalNode;CRITICAL;SOFT;2;Connection refused or timed out
+[1442006901] SERVICE ALERT: nn2.hadoop.com;SSH;CRITICAL;SOFT;2;connect to address nn2.hadoop.com and port 22: No route to host
+[1442006919] SERVICE ALERT: dn1.hadoop.com;SSH;CRITICAL;SOFT;2;connect to address dn1.hadoop.com and port 22: No route to host
+[1442006963] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442006988] SERVICE ALERT: dn1.hadoop.com;Zookeeper;CRITICAL;HARD;3;Connection refused or timed out
+[1442007001] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442007001] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442007001] SERVICE ALERT: nn1.hadoop.com;Name_Node_Status;CRITICAL;SOFT;1;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442007090] SERVICE ALERT: dn1.hadoop.com;Disk_Space;CRITICAL;HARD;3;Connection refused or timed out
+[1442007156] SERVICE ALERT: dn1.hadoop.com;JournalNode;CRITICAL;HARD;3;Connection refused or timed out
+[1442007167] SERVICE ALERT: nn2.hadoop.com;Zookeeper;CRITICAL;HARD;3;Connection refused or timed out
+[1442007180] SERVICE ALERT: nn2.hadoop.com;Disk_Space;CRITICAL;HARD;3;Connection refused or timed out
+[1442007188] SERVICE ALERT: nn2.hadoop.com;DFSZKFailoverController;CRITICAL;HARD;3;Connection refused or timed out
+[1442007188] SERVICE ALERT: nn2.hadoop.com;JournalNode;CRITICAL;HARD;3;Connection refused or timed out
+[1442007188] SERVICE ALERT: nn2.hadoop.com;Namenode_Proc;CRITICAL;HARD;3;Connection refused or timed out
+[1442007207] SERVICE ALERT: nn2.hadoop.com;SSH;CRITICAL;HARD;3;connect to address nn2.hadoop.com and port 22: No route to host
+[1442007221] SERVICE ALERT: dn1.hadoop.com;SSH;CRITICAL;HARD;3;connect to address dn1.hadoop.com and port 22: No route to host
+[1442007301] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442007301] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442007301] SERVICE ALERT: nn1.hadoop.com;Name_Node_Status;CRITICAL;SOFT;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442007547] wproc: Core Worker 2766: job 1921 (pid=16552) timed out. Killing it
+[1442007547] wproc: CHECK job 1921 from worker Core Worker 2766 timed out after 60.03s
+[1442007547] wproc:   host=nn2.hadoop.com; service=Namenode_Proc;
+[1442007547] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442007547] Warning: Check of service 'Namenode_Proc' on host 'nn2.hadoop.com' timed out after 60.030s!
+[1442007547] wproc: Core Worker 2766: job 1921 (pid=16552): Dormant child reaped
+[1442007602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442007602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442007602] SERVICE ALERT: nn1.hadoop.com;Name_Node_Status;CRITICAL;HARD;3;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442007602] SERVICE NOTIFICATION: india;nn1.hadoop.com;Name_Node_Status;CRITICAL;notify-service-by-email-with-url;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442007602] SERVICE NOTIFICATION: email-only;nn1.hadoop.com;Name_Node_Status;CRITICAL;notify-service-by-email-with-url;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442007602] wproc: NOTIFY job 1923 from worker Core Worker 2765 is a non-check helper but exited with return code 2
+[1442007602] wproc:   host=nn1.hadoop.com; service=Name_Node_Status; contact=india
+[1442007602] wproc:   early_timeout=0; exited_ok=1; wait_status=512; error_code=0;
+[1442007602] wproc:   stderr line 01: Send options without primary recipient specified.
+[1442007602] wproc:   stderr line 02: Usage: mail -eiIUdEFntBDNHRV~ -T FILE -u USER -h hops -r address -s SUBJECT -a FILE -q FILE -f FILE -A ACCOUNT -b USERS -c USERS -S OPTION users
+[1442007847] wproc: Core Worker 2766: job 1928 (pid=16720) timed out. Killing it
+[1442007847] wproc: CHECK job 1928 from worker Core Worker 2766 timed out after 60.03s
+[1442007847] wproc:   host=nn2.hadoop.com; service=Namenode_Proc;
+[1442007847] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442007847] Warning: Check of service 'Namenode_Proc' on host 'nn2.hadoop.com' timed out after 60.032s!
+[1442007847] wproc: Core Worker 2766: job 1928 (pid=16720): Dormant child reaped
+[1442007902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442007902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442008139] wproc: Core Worker 2765: job 1934 (pid=16861) timed out. Killing it
+[1442008139] wproc: CHECK job 1934 from worker Core Worker 2765 timed out after 60.04s
+[1442008139] wproc:   host=nn2.hadoop.com; service=Disk_Space;
+[1442008139] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442008139] Warning: Check of service 'Disk_Space' on host 'nn2.hadoop.com' timed out after 60.037s!
+[1442008139] wproc: Core Worker 2765: job 1934 (pid=16861): Dormant child reaped
+[1442008145] wproc: Core Worker 2763: job 1934 (pid=16871) timed out. Killing it
+[1442008145] wproc: CHECK job 1934 from worker Core Worker 2763 timed out after 60.01s
+[1442008145] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442008145] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442008145] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.014s!
+[1442008145] wproc: Core Worker 2763: job 1934 (pid=16871): Dormant child reaped
+[1442008201] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442008201] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442008223] Auto-save of retention data completed successfully.
+[1442008502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442008502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442008802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442008802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442009045] wproc: Core Worker 2765: job 1955 (pid=17375) timed out. Killing it
+[1442009045] wproc: CHECK job 1955 from worker Core Worker 2765 timed out after 60.02s
+[1442009045] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442009045] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442009045] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.017s!
+[1442009045] wproc: Core Worker 2765: job 1955 (pid=17375): Dormant child reaped
+[1442009101] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442009101] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442009123] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442009402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442009402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442009702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442009702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442009723] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 0m 21s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442009723] SERVICE ALERT: nn2.hadoop.com;Name_Node_Status;CRITICAL;SOFT;1;CRITICAL: Name_Node_Status check not received
+[1442010001] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442010001] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442010302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442010302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442010602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442010602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442010623] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442010901] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442010901] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442011202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442011202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442011501] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442011501] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442011802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442011802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442011823] Auto-save of retention data completed successfully.
+[1442012102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442012102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442012402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442012402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442012702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442012702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442012783] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442013002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442013002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442013302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442013302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442013383] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442013383] SERVICE ALERT: nn2.hadoop.com;Name_Node_Status;CRITICAL;SOFT;2;CRITICAL: Name_Node_Status check not received
+[1442013602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442013602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442013911] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442013911] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442014205] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442014205] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442014283] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442014502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442014502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442014744] wproc: Core Worker 2764: job 2084 (pid=20407) timed out. Killing it
+[1442014744] wproc: CHECK job 2084 from worker Core Worker 2764 timed out after 60.01s
+[1442014744] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442014744] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442014744] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.012s!
+[1442014802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442014802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442015102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442015102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442015421] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442015421] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442015423] Auto-save of retention data completed successfully.
+[1442015702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442015702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442015944] wproc: Core Worker 2765: job 2111 (pid=21007) timed out. Killing it
+[1442015944] wproc: CHECK job 2111 from worker Core Worker 2765 timed out after 60.06s
+[1442015944] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442015944] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442015944] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.059s!
+[1442015944] wproc: Core Worker 2765: job 2111 (pid=21007): Dormant child reaped
+[1442016015] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442016015] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442016212] wproc: Core Worker 2763: job 2115 (pid=21125) timed out. Killing it
+[1442016212] wproc: CHECK job 2115 from worker Core Worker 2763 timed out after 60.04s
+[1442016212] wproc:   host=nn2.hadoop.com; service=Zookeeper;
+[1442016212] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442016212] Warning: Check of service 'Zookeeper' on host 'nn2.hadoop.com' timed out after 60.042s!
+[1442016212] wproc: Core Worker 2763: job 2115 (pid=21125): Dormant child reaped
+[1442016302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442016302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442016443] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442016602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442016602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442016844] wproc: Core Worker 2766: job 2132 (pid=21469) timed out. Killing it
+[1442016844] wproc: CHECK job 2132 from worker Core Worker 2766 timed out after 60.04s
+[1442016844] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442016844] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442016844] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.041s!
+[1442016844] wproc: Core Worker 2766: job 2132 (pid=21469): Dormant child reaped
+[1442016902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442016902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442017043] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442017043] SERVICE ALERT: nn2.hadoop.com;Name_Node_Status;CRITICAL;HARD;3;CRITICAL: Name_Node_Status check not received
+[1442017202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442017202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442017444] wproc: Core Worker 2763: job 2145 (pid=22114) timed out. Killing it
+[1442017444] wproc: CHECK job 2145 from worker Core Worker 2763 timed out after 60.02s
+[1442017444] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442017444] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442017444] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.020s!
+[1442017444] wproc: Core Worker 2763: job 2145 (pid=22114): Dormant child reaped
+[1442017502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442017502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442017801] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442017801] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442017943] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442018102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442018102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442018402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442018402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442018644] wproc: Core Worker 2766: job 2173 (pid=22840) timed out. Killing it
+[1442018644] wproc: CHECK job 2173 from worker Core Worker 2766 timed out after 60.06s
+[1442018644] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442018644] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442018644] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.056s!
+[1442018644] wproc: Core Worker 2766: job 2173 (pid=22840): Dormant child reaped
+[1442018702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442018702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442019002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442019002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442019023] Auto-save of retention data completed successfully.
+[1442019321] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442019321] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442019602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442019602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442019902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442019902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442020103] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442020201] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442020201] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442020503] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442020503] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442020703] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442020744] wproc: Core Worker 2765: job 2220 (pid=24264) timed out. Killing it
+[1442020744] wproc: CHECK job 2220 from worker Core Worker 2765 timed out after 60.03s
+[1442020744] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442020744] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442020744] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.032s!
+[1442020744] wproc: Core Worker 2765: job 2220 (pid=24264): Dormant child reaped
+[1442020802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442020802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442021103] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442021103] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442021332] wproc: Core Worker 2764: job 2233 (pid=24585) timed out. Killing it
+[1442021332] wproc: CHECK job 2233 from worker Core Worker 2764 timed out after 60.03s
+[1442021332] wproc:   host=nn2.hadoop.com; service=DFSZKFailoverController;
+[1442021332] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442021332] Warning: Check of service 'DFSZKFailoverController' on host 'nn2.hadoop.com' timed out after 60.034s!
+[1442021332] wproc: Core Worker 2764: job 2233 (pid=24585): Dormant child reaped
+[1442021402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442021402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442021603] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442021702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442021702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442022002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442022002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442022301] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442022301] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442022602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442022602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442022623] Auto-save of retention data completed successfully.
+[1442022812] wproc: Core Worker 2765: job 2266 (pid=25757) timed out. Killing it
+[1442022812] wproc: CHECK job 2266 from worker Core Worker 2765 timed out after 60.04s
+[1442022812] wproc:   host=nn2.hadoop.com; service=Zookeeper;
+[1442022812] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442022812] Warning: Check of service 'Zookeeper' on host 'nn2.hadoop.com' timed out after 60.037s!
+[1442022812] wproc: Core Worker 2765: job 2266 (pid=25757): Dormant child reaped
+[1442022902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442022902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442023201] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442023201] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442023502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442023502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442023763] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442023820] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442023820] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442024038] wproc: Core Worker 2765: job 2295 (pid=26379) timed out. Killing it
+[1442024038] wproc: CHECK job 2295 from worker Core Worker 2765 timed out after 60.03s
+[1442024038] wproc:   host=nn2.hadoop.com; service=Disk_Space;
+[1442024038] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442024038] Warning: Check of service 'Disk_Space' on host 'nn2.hadoop.com' timed out after 60.025s!
+[1442024038] wproc: Core Worker 2765: job 2295 (pid=26379): Dormant child reaped
+[1442024102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442024102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442024338] wproc: Core Worker 2766: job 2302 (pid=26519) timed out. Killing it
+[1442024338] wproc: CHECK job 2302 from worker Core Worker 2766 timed out after 60.03s
+[1442024338] wproc:   host=nn2.hadoop.com; service=Disk_Space;
+[1442024338] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442024338] Warning: Check of service 'Disk_Space' on host 'nn2.hadoop.com' timed out after 60.035s!
+[1442024338] wproc: Core Worker 2766: job 2302 (pid=26519): Dormant child reaped
+[1442024363] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442024407] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442024407] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442024721] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442024721] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442024912] wproc: Core Worker 2765: job 2314 (pid=26789) timed out. Killing it
+[1442024912] wproc: CHECK job 2314 from worker Core Worker 2765 timed out after 60.04s
+[1442024912] wproc:   host=nn2.hadoop.com; service=Zookeeper;
+[1442024912] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442024912] Warning: Check of service 'Zookeeper' on host 'nn2.hadoop.com' timed out after 60.040s!
+[1442024912] wproc: Core Worker 2765: job 2314 (pid=26789): Dormant child reaped
+[1442025013] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442025013] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442025263] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442025301] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442025301] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442025602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442025602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442025902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442025902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442026202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442026202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442026223] Auto-save of retention data completed successfully.
+[1442026438] wproc: Core Worker 2765: job 2349 (pid=27605) timed out. Killing it
+[1442026438] wproc: CHECK job 2349 from worker Core Worker 2765 timed out after 60.03s
+[1442026438] wproc:   host=nn2.hadoop.com; service=Disk_Space;
+[1442026438] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442026438] Warning: Check of service 'Disk_Space' on host 'nn2.hadoop.com' timed out after 60.025s!
+[1442026438] wproc: Core Worker 2765: job 2349 (pid=27605): Dormant child reaped
+[1442026502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442026502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442026802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442026802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442027110] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442027110] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442027418] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442027418] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442027423] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442027705] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442027705] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442028002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442028002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442028023] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442028212] wproc: Core Worker 2764: job 2388 (pid=28497) timed out. Killing it
+[1442028212] wproc: CHECK job 2388 from worker Core Worker 2764 timed out after 60.03s
+[1442028212] wproc:   host=nn2.hadoop.com; service=Zookeeper;
+[1442028212] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442028212] Warning: Check of service 'Zookeeper' on host 'nn2.hadoop.com' timed out after 60.029s!
+[1442028212] wproc: Core Worker 2764: job 2388 (pid=28497): Dormant child reaped
+[1442028301] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442028301] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442028602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442028602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442028902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442028902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442028923] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442029201] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442029201] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442029501] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442029501] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442029802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442029802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442029823] Auto-save of retention data completed successfully.
+[1442030102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442030102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442030402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442030402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442030702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442030702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442031002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442031002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442031083] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442031302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442031302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442031602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442031602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442031683] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442031811] wproc: Core Worker 2765: job 2469 (pid=30378) timed out. Killing it
+[1442031811] wproc: CHECK job 2469 from worker Core Worker 2765 timed out after 60.02s
+[1442031811] wproc:   host=dn1.hadoop.com; service=JournalNode;
+[1442031811] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442031811] Warning: Check of service 'JournalNode' on host 'dn1.hadoop.com' timed out after 60.021s!
+[1442031811] wproc: Core Worker 2765: job 2469 (pid=30378): Dormant child reaped
+[1442031902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442031902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442032202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442032202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442032432] wproc: Core Worker 2764: job 2483 (pid=30709) timed out. Killing it
+[1442032432] wproc: CHECK job 2483 from worker Core Worker 2764 timed out after 60.04s
+[1442032432] wproc:   host=nn2.hadoop.com; service=DFSZKFailoverController;
+[1442032432] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442032432] Warning: Check of service 'DFSZKFailoverController' on host 'nn2.hadoop.com' timed out after 60.039s!
+[1442032432] wproc: Core Worker 2764: job 2483 (pid=30709): Dormant child reaped
+[1442032502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442032502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442032583] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442032738] wproc: Core Worker 2765: job 2491 (pid=30861) timed out. Killing it
+[1442032738] wproc: CHECK job 2491 from worker Core Worker 2765 timed out after 60.02s
+[1442032738] wproc:   host=nn2.hadoop.com; service=Disk_Space;
+[1442032738] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442032738] Warning: Check of service 'Disk_Space' on host 'nn2.hadoop.com' timed out after 60.024s!
+[1442032738] wproc: Core Worker 2765: job 2491 (pid=30861): Dormant child reaped
+[1442032802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442032802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442033032] wproc: Core Worker 2763: job 2497 (pid=30998) timed out. Killing it
+[1442033032] wproc: CHECK job 2497 from worker Core Worker 2763 timed out after 60.03s
+[1442033032] wproc:   host=nn2.hadoop.com; service=DFSZKFailoverController;
+[1442033032] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442033032] Warning: Check of service 'DFSZKFailoverController' on host 'nn2.hadoop.com' timed out after 60.034s!
+[1442033032] wproc: Core Worker 2763: job 2497 (pid=30998): Dormant child reaped
+[1442033046] wproc: Core Worker 2766: job 2499 (pid=31014) timed out. Killing it
+[1442033046] wproc: CHECK job 2499 from worker Core Worker 2766 timed out after 60.02s
+[1442033046] wproc:   host=nn2.hadoop.com; service=Namenode_Proc;
+[1442033046] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442033046] Warning: Check of service 'Namenode_Proc' on host 'nn2.hadoop.com' timed out after 60.024s!
+[1442033046] wproc: Core Worker 2766: job 2499 (pid=31014): Dormant child reaped
+[1442033107] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442033107] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442033332] wproc: Core Worker 2765: job 2504 (pid=31138) timed out. Killing it
+[1442033332] wproc: CHECK job 2504 from worker Core Worker 2765 timed out after 60.05s
+[1442033332] wproc:   host=nn2.hadoop.com; service=DFSZKFailoverController;
+[1442033332] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442033332] Warning: Check of service 'DFSZKFailoverController' on host 'nn2.hadoop.com' timed out after 60.047s!
+[1442033332] wproc: Core Worker 2765: job 2504 (pid=31138): Dormant child reaped
+[1442033401] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442033401] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442033423] Auto-save of retention data completed successfully.
+[1442033612] wproc: Core Worker 2766: job 2510 (pid=31302) timed out. Killing it
+[1442033612] wproc: CHECK job 2510 from worker Core Worker 2766 timed out after 60.02s
+[1442033612] wproc:   host=nn2.hadoop.com; service=Zookeeper;
+[1442033612] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442033612] Warning: Check of service 'Zookeeper' on host 'nn2.hadoop.com' timed out after 60.020s!
+[1442033612] wproc: Core Worker 2766: job 2510 (pid=31302): Dormant child reaped
+[1442033704] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442033704] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442034008] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442034008] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442034302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442034302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442034602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442034602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442034743] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442034844] wproc: Core Worker 2766: job 2539 (pid=31927) timed out. Killing it
+[1442034844] wproc: CHECK job 2539 from worker Core Worker 2766 timed out after 60.01s
+[1442034844] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442034844] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442034844] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.013s!
+[1442034844] wproc: Core Worker 2766: job 2539 (pid=31927): Dormant child reaped
+[1442034902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442034902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442035144] wproc: Core Worker 2766: job 2546 (pid=32091) timed out. Killing it
+[1442035144] wproc: CHECK job 2546 from worker Core Worker 2766 timed out after 60.03s
+[1442035144] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442035144] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442035144] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.026s!
+[1442035144] wproc: Core Worker 2766: job 2546 (pid=32091): Dormant child reaped
+[1442035212] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442035212] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442035343] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442035432] wproc: Core Worker 2765: job 2552 (pid=32241) timed out. Killing it
+[1442035432] wproc: CHECK job 2552 from worker Core Worker 2765 timed out after 60.02s
+[1442035432] wproc:   host=nn2.hadoop.com; service=DFSZKFailoverController;
+[1442035432] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442035432] Warning: Check of service 'DFSZKFailoverController' on host 'nn2.hadoop.com' timed out after 60.023s!
+[1442035432] wproc: Core Worker 2765: job 2552 (pid=32241): Dormant child reaped
+[1442035444] wproc: Core Worker 2766: job 2553 (pid=32246) timed out. Killing it
+[1442035444] wproc: CHECK job 2553 from worker Core Worker 2766 timed out after 60.02s
+[1442035444] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442035444] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442035444] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.016s!
+[1442035444] wproc: Core Worker 2766: job 2553 (pid=32246): Dormant child reaped
+[1442035513] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442035513] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442035806] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442035806] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442036012] wproc: Core Worker 2764: job 2564 (pid=32562) timed out. Killing it
+[1442036012] wproc: CHECK job 2564 from worker Core Worker 2764 timed out after 60.03s
+[1442036012] wproc:   host=nn2.hadoop.com; service=Zookeeper;
+[1442036012] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442036012] Warning: Check of service 'Zookeeper' on host 'nn2.hadoop.com' timed out after 60.032s!
+[1442036012] wproc: Core Worker 2764: job 2564 (pid=32562): Dormant child reaped
+[1442036101] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442036101] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442036243] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442036402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442036402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442036644] wproc: Core Worker 2766: job 2580 (pid=404) timed out. Killing it
+[1442036644] wproc: CHECK job 2580 from worker Core Worker 2766 timed out after 60.04s
+[1442036644] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442036644] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442036644] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.037s!
+[1442036644] wproc: Core Worker 2766: job 2580 (pid=404): Dormant child reaped
+[1442036702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442036702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442037002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442037002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442037024] Auto-save of retention data completed successfully.
+[1442037238] wproc: Core Worker 2765: job 2593 (pid=691) timed out. Killing it
+[1442037238] wproc: CHECK job 2593 from worker Core Worker 2765 timed out after 60.02s
+[1442037238] wproc:   host=nn2.hadoop.com; service=Disk_Space;
+[1442037238] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442037238] Warning: Check of service 'Disk_Space' on host 'nn2.hadoop.com' timed out after 60.018s!
+[1442037238] wproc: Core Worker 2765: job 2593 (pid=691): Dormant child reaped
+[1442037244] wproc: Core Worker 2764: job 2593 (pid=694) timed out. Killing it
+[1442037244] wproc: CHECK job 2593 from worker Core Worker 2764 timed out after 60.01s
+[1442037244] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442037244] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442037244] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.011s!
+[1442037244] wproc: Core Worker 2764: job 2593 (pid=694): Dormant child reaped
+[1442037302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442037302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442037602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442037602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442037902] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442037902] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442038146] wproc: Core Worker 2766: job 2614 (pid=1202) timed out. Killing it
+[1442038146] wproc: CHECK job 2614 from worker Core Worker 2766 timed out after 60.03s
+[1442038146] wproc:   host=nn2.hadoop.com; service=Namenode_Proc;
+[1442038146] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442038146] Warning: Check of service 'Namenode_Proc' on host 'nn2.hadoop.com' timed out after 60.029s!
+[1442038146] wproc: Core Worker 2766: job 2614 (pid=1202): Dormant child reaped
+[1442038202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442038202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442038403] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442038501] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442038501] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442038803] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442038803] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442039003] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442039102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442039102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442039402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442039402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442039702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442039702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442039741] wproc: Core Worker 2765: job 2649 (pid=2162) timed out. Killing it
+[1442039741] wproc: CHECK job 2649 from worker Core Worker 2765 timed out after 60.07s
+[1442039741] wproc:   host=dn1.hadoop.com; service=Zookeeper;
+[1442039741] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442039741] Warning: Check of service 'Zookeeper' on host 'dn1.hadoop.com' timed out after 60.071s!
+[1442039903] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442040002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442040002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442040302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442040302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442040602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442040602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442040623] Auto-save of retention data completed successfully.
+[1442040844] wproc: Core Worker 2766: job 2674 (pid=2741) timed out. Killing it
+[1442040844] wproc: CHECK job 2674 from worker Core Worker 2766 timed out after 60.02s
+[1442040844] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442040844] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442040844] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.025s!
+[1442040844] wproc: Core Worker 2766: job 2674 (pid=2741): Dormant child reaped
+[1442040901] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442040901] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442041131] wproc: Core Worker 2766: job 2680 (pid=2887) timed out. Killing it
+[1442041131] wproc: CHECK job 2680 from worker Core Worker 2766 timed out after 60.04s
+[1442041131] wproc:   host=nn2.hadoop.com; service=DFSZKFailoverController;
+[1442041131] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442041131] Warning: Check of service 'DFSZKFailoverController' on host 'nn2.hadoop.com' timed out after 60.041s!
+[1442041131] wproc: Core Worker 2766: job 2680 (pid=2887): Dormant child reaped
+[1442041201] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442041201] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442041502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442041502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442041801] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442041801] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442042012] wproc: Core Worker 2766: job 2699 (pid=3336) timed out. Killing it
+[1442042012] wproc: CHECK job 2699 from worker Core Worker 2766 timed out after 60.02s
+[1442042012] wproc:   host=nn2.hadoop.com; service=Zookeeper;
+[1442042012] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442042012] Warning: Check of service 'Zookeeper' on host 'nn2.hadoop.com' timed out after 60.020s!
+[1442042012] wproc: Core Worker 2766: job 2699 (pid=3336): Dormant child reaped
+[1442042063] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442042102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442042102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442042344] wproc: Core Worker 2763: job 2707 (pid=3513) timed out. Killing it
+[1442042344] wproc: CHECK job 2707 from worker Core Worker 2763 timed out after 60.04s
+[1442042344] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442042344] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442042344] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.035s!
+[1442042344] wproc: Core Worker 2763: job 2707 (pid=3513): Dormant child reaped
+[1442042345] wproc: Core Worker 2766: job 2708 (pid=3514) timed out. Killing it
+[1442042345] wproc: CHECK job 2708 from worker Core Worker 2766 timed out after 60.02s
+[1442042345] wproc:   host=nn2.hadoop.com; service=Namenode_Proc;
+[1442042345] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442042345] Warning: Check of service 'Namenode_Proc' on host 'nn2.hadoop.com' timed out after 60.015s!
+[1442042345] wproc: Core Worker 2766: job 2708 (pid=3514): Dormant child reaped
+[1442042402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442042402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442042644] wproc: Core Worker 2763: job 2714 (pid=3664) timed out. Killing it
+[1442042644] wproc: CHECK job 2714 from worker Core Worker 2763 timed out after 60.02s
+[1442042644] wproc:   host=nn2.hadoop.com; service=JournalNode;
+[1442042644] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442042644] Warning: Check of service 'JournalNode' on host 'nn2.hadoop.com' timed out after 60.024s!
+[1442042644] wproc: Core Worker 2763: job 2714 (pid=3664): Dormant child reaped
+[1442042663] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442042702] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442042702] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442043002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442043002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442043319] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442043319] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442043563] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442043618] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442043618] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442043918] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442043918] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442044202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442044202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442044223] Auto-save of retention data completed successfully.
+[1442044502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442044502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442044802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442044802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442045102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442045102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442045402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442045402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442045612] wproc: Core Worker 2764: job 2779 (pid=5658) timed out. Killing it
+[1442045612] wproc: CHECK job 2779 from worker Core Worker 2764 timed out after 60.03s
+[1442045612] wproc:   host=nn2.hadoop.com; service=Zookeeper;
+[1442045612] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442045612] Warning: Check of service 'Zookeeper' on host 'nn2.hadoop.com' timed out after 60.033s!
+[1442045612] wproc: Core Worker 2764: job 2779 (pid=5658): Dormant child reaped
+[1442045631] wproc: Core Worker 2764: job 2780 (pid=5675) timed out. Killing it
+[1442045631] wproc: CHECK job 2780 from worker Core Worker 2764 timed out after 60.03s
+[1442045631] wproc:   host=nn2.hadoop.com; service=DFSZKFailoverController;
+[1442045631] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1442045631] Warning: Check of service 'DFSZKFailoverController' on host 'nn2.hadoop.com' timed out after 60.025s!
+[1442045631] wproc: Core Worker 2764: job 2780 (pid=5675): Dormant child reaped
+[1442045701] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442045701] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442045723] Warning: The results of service 'ResourceMgr' on host 'nn1.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442046002] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442046002] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442046302] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442046302] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442046323] Warning: The results of service 'Name_Node_Status' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442046602] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442046602] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442046901] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442046901] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442047202] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442047202] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442047223] Warning: The results of service 'ResourceMgr' on host 'nn2.hadoop.com' are stale by 0d 0h 1m 0s (threshold=0d 1h 0m 0s).  I'm forcing an immediate check of the service.
+[1442047502] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442047502] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442047802] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442047802] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442047823] Auto-save of retention data completed successfully.
+[1442048102] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442048102] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442048402] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442048402] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442048701] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442048701] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442049018] EXTERNAL COMMAND: PROCESS_SERVICE_CHECK_RESULT;nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy;  Live Nodes %age = 33.3333333333333 <= 95 ;
+[1442049018] PASSIVE SERVICE CHECK: nn1.hadoop.com;Name_Node_Status;2;Critical : State = StandBy:  Live Nodes %age = 33.3333333333333 <= 95 :
+[1442049219] Caught SIGTERM, shutting down...
+[1442049219] Successfully shutdown... (PID=2761)
+[1442049219] Event broker module 'NERD' deinitialized successfully.
