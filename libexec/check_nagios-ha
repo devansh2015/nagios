@@ -1,0 +1,17 @@
+#!/bin/bash
+
+PROCS=`pidof -o %PPID -x nagios-ha`;
+STAT=$?;
+
+if [ ${#PROCS} -gt 1 -a $STAT -eq 0 ];then
+	echo "OK : Nagios-HA process running with pid $PROCS";
+	exit 0;
+else 
+	if [ ${#PROCS} -eq 0 -a $STAT -eq 1 ];then
+		echo "Critical : Nagios-HA process down ; run '/etc/init.d/nagios-ha start'";
+		exit 2;
+	else
+		echo "Unknown : Nagios-HA process is in unknown state";
+		exit 3;
+	fi
+fi 
